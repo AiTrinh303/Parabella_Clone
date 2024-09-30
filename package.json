@@ -1,5 +1,5 @@
 {
-  "name": "eng-platform",
+  "name": "Parabella_clone",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -15,7 +15,8 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.2",
-    "sass": "^1.78.0"
+    "sass": "^1.78.0",
+    "aos": "^3.0.0-beta.6"
   },
   "devDependencies": {
     "@eslint/js": "^9.10.0",
