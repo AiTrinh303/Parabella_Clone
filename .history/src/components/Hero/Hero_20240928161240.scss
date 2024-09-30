@@ -1,0 +1,26 @@
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(0, 45, 87);
+    position: relative; 
+    overflow: hidden; 
+
+    .hero-content {
+        color: white; 
+        position: relative; // Keeps content on top of the image
+        z-index: 1; // Ensure content is above the image
+        padding: 20px; // Example padding
+    }
+
+    .group-image {
+        position: absolute; // Allows positioning in the bottom right
+        bottom: 0; // Position at the bottom
+        right: 0; // Position at the right
+        width: auto; // Maintain aspect ratio
+        height: auto; // Maintain aspect ratio
+
+        // Optional: to adjust the size
+        max-width: 50%; // You can adjust this as needed
+        max-height: 50%; // You can adjust this as needed
+    }
+}

@@ -1,0 +1,138 @@
+@import "../../responsive.scss";
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  background-color: rgb(0, 45, 87);
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  &-left {
+    flex: 1;
+    max-height: 20px;
+  }
+
+  &-center {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 20px;
+    text-decoration: none;
+    list-style: none;
+
+    .nav-link {
+      @include sm {
+        display: none;
+      }
+      @include md {
+        font-size: 16px;  // Reduced font size for tablets
+        gap: 1rem;  // Adjusted gap for smaller screens
+      }
+   }
+
+    .active {
+      text-decoration: underline;
+    }
+  }
+
+  &-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+
+    button {
+      background: transparent;
+      border: none;
+      color: #fff;
+      padding: 0.6rem 1rem;
+      border-radius: 8px;
+      font-size: 20px;
+      cursor: pointer;
+
+      &.login{
+        @include md {
+          display: none;
+        }
+        @include sm {
+          display: none;
+        }
+      }
+
+      &.app {
+        background-color: white;
+        color: rgb(0, 45, 87);
+
+        @include md {
+          font-size: 16px;
+        }
+
+        @include sm {
+          display: none;
+        }
+
+        &:hover {
+          background-color: rgb(127, 146, 162);
+        }
+      }
+    }
+
+    .menuIcon {
+      display: none; 
+      z-index: 999;
+      cursor: pointer;
+  
+      img {
+        width: 36px;
+        height: 36px;
+        cursor: pointer;
+      }
+      
+      @include sm {
+        display: inline;
+      }
+    }
+  
+    .menu {
+      position: absolute;
+      top: 0;
+      right: -50%;
+      background-color: black;
+      color: white;
+      height: 100vh;
+      width: 50%;
+      transition: all 1s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+
+      &.active {
+        right: 0;
+      }
+
+      @include sm {
+        a {
+          display: initial;
+        }
+      }
+    }
+  }
+
+  &-logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+
+  
+}
+

@@ -1,0 +1,10 @@
+.funktioniert {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row; // Aligns content and image side by side
+    justify-content: space-between; // Space between content and image
+    align-items: center; // Center vertically
+    
+    
+}

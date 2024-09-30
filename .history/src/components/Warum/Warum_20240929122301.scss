@@ -1,0 +1,43 @@
+.warum{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+
+  p{
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: rgb(126,159,20);
+  }  
+
+  h2{
+    font-size: 2.7em;
+    margin-bottom: 50px;
+    color: rgb(0, 45, 87); 
+    max-width: 50vw;
+    margin: 0 auto;
+  }
+
+  .block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    gap: 20px; /* Adds space between the cards */
+    margin: 100px 150px;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: left;
+    img {
+      max-width: 100%;
+      border-radius: 4px;
+      width: 40px;
+      
+    }
+  }
+  }

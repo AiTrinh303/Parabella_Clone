@@ -1,0 +1,33 @@
+.partner{
+    width: 100%;
+    min-height: 30vh;
+    text-align: center;
+    padding-top: 50px;
+    margin-top: 20px;
+
+    h2{
+        font-size: 3em;
+        color: rgb(25,27,6); 
+        max-width: 50vw;
+        margin: 0 auto;
+      }
+
+      .partner_imgs {
+        display: flex;                
+        justify-content: center;      /* Center logos horizontally */
+        align-items: center;          /* Align logos vertically */
+        gap: 80px;                    /* Spacing between logos */
+        flex-wrap: wrap;              /* Allows wrapping if screen is too small */
+        margin-top: 30px;
+    
+        img {
+          max-width: 150px;           /* Set a max width for logos */
+          height: auto;               /* Keep logo aspect ratio */
+          transition: transform 0.3s ease;
+    
+          &:hover {
+            transform: scale(1.1);    /* Slight zoom effect on hover */
+          }
+        }
+      }  
+}

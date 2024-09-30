@@ -1,0 +1,95 @@
+@import "../../responsive.scss";
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  background-color: rgb(0, 45, 87);
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  &-left {
+    flex: 1;
+    max-height: 20px;
+  }
+
+  &-center {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 20px;
+    text-decoration: none;
+    list-style: none;
+
+    .active {
+      text-decoration: underline;
+    }
+  }
+
+  &-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+
+    button {
+      background: transparent;
+      border: none;
+      color: #fff;
+      padding: 0.6rem 1rem;
+      border-radius: 8px;
+      font-size: 20px;
+      cursor: pointer;
+
+      &.app {
+        background-color: white;
+        color: rgb(0, 45, 87);
+
+        &:hover {
+          background-color: rgb(127, 146, 162);
+        }
+      }
+    }
+  }
+
+  &-logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+
+  .menuIcon {
+    display: none; 
+    z-index: 999;
+    cursor: pointer;
+    
+    img {
+      width: 36px;
+      height: 36px;
+      cursor: pointer;
+    }
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background-color: rgb(0, 45, 87);
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    text-align: right;
+
+    &.active {
+      display: flex;
+    }
+  }
+}
+

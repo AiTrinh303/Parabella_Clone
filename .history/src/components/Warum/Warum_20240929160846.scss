@@ -1,0 +1,76 @@
+.warum{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    padding-top: 100px;
+
+  p{
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: rgb(126,159,20);
+  }  
+
+  h2{
+    font-size: 2.7em;
+    margin-bottom: 50px;
+    color:rgb(25,27,6); 
+    max-width: 50vw;
+    margin: 0 auto;
+  }
+  .block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 80px;
+    margin: 100px 150px;   
+    border: none; 
+  }
+  @media (max-width: 1024px) {
+    .block {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+      margin: 50px 50px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .block {
+      grid-template-columns: 1fr;
+      gap: 30px;
+      margin: 30px 20px;
+    }
+  }  
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+  border-radius: 15px;
+  background-color: #F3F3F3;
+  text-align: left;
+  
+  img {
+    max-width: 100%;
+    border-radius: 4px;
+    width: 80px;
+    height: 80px;
+  }
+
+  h3{
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: rgb(0, 45, 87);
+  }
+
+  p{
+    font-size: 1.3em;
+    font-weight: 400;
+    color: rgb(0, 45, 87);
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}

@@ -1,0 +1,129 @@
+.footer {
+    width: 100%;
+    min-height: 30vh;
+    background-color: rgb(0,45,87);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 100px;
+    gap: 50px;
+  
+    .top {
+      display: flex;
+      margin-bottom: 1rem;
+      gap: 200px;
+      padding-top: 30px;
+  
+      .logo {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
+        a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 2em;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        p{
+            font-size: 1.2em;
+            font-weight: 300;
+        
+        }
+      }
+  
+      .links {
+        flex: 3;
+        display: flex;
+        justify-items: flex-start;
+        gap: 150px;
+  
+        ul {
+          list-style: none;
+          padding: 0;
+          
+          li {
+            margin-bottom: 0.5rem;
+            font-weight: 300;
+            font-size: 1.3rem;
+            color: #cdcbcb;
+  
+            a {
+              color: #fff;
+              text-decoration: none;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+  
+      .social-icons {
+        padding-top: 30px;
+        display: flex;
+
+        img {
+          margin-right: 1rem;
+          width: 35px;
+                    
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  
+    .bottom {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+  
+      .left {
+        a {
+          margin-right: 1rem;
+          color: #fff;
+          text-decoration: none;
+          font-weight: 300;
+          font-size: large;
+  
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+  
+      .right {
+        span {
+            font-weight: 300;
+            font-size: large;
+        }
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .top {
+        flex-direction: column;
+  
+        .logo, .links {
+          margin-bottom: 1rem;
+        }
+      }
+  
+      .bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+  
+        .left {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+  

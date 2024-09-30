@@ -1,0 +1,25 @@
+@import "../responsive.scss";
+
+.layout {
+  display: flex;
+  flex-direction: column; 
+  min-height: 100vh;
+  
+
+  @include lg {
+    max-width: 1280px;
+  }
+
+  @include md {
+    max-width: 768px;
+  }
+
+  @include sm {
+    max-width: 640px;
+  }
+
+  .content{
+   flex: 1;
+  }
+}
+

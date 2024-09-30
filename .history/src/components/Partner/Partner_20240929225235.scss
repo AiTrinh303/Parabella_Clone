@@ -1,0 +1,33 @@
+.partner{
+    width: 100%;
+    min-height: 30vh;
+    text-align: center;
+    padding-top: 50px;
+    margin-top: 20px;
+
+    h2{
+        font-size: 3em;
+        color: rgb(25,27,6); 
+        max-width: 50vw;
+        margin: 0 auto;
+      }
+
+      .partner_imgs {
+        display: flex;                
+        justify-content: center;     
+        align-items: center;          
+        gap: 80px;                    
+        flex-wrap: wrap;             
+        margin-top: 30px;
+    
+        img {
+          max-width: 150px;           
+          height: auto;               /* Keep logo aspect ratio */
+          transition: transform 0.3s ease;
+    
+          &:hover {
+            transform: scale(1.1);    /* Slight zoom effect on hover */
+          }
+        }
+      }  
+}

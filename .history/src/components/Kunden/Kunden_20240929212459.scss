@@ -1,0 +1,87 @@
+.kunden{
+    
+}
+
+.kunden {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 50px;
+    background-color: #f9f9f9;
+  
+    .back-btn, .next-btn {
+      cursor: pointer;
+      width: 40px; /* adjust size to your preference */
+      height: 40px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  
+    .back-btn {
+      left: 20px;  /* Positioned on the left side */
+    }
+  
+    .next-btn {
+      right: 20px; /* Positioned on the right side */
+    }
+  
+    .kunden-content {
+      max-width: 1000px;
+      width: 100%;
+      text-align: center;
+  
+      h2 {
+        font-size: 2em;
+        margin-bottom: 30px;
+        color: #003057; /* Example color */
+      }
+  
+      .content {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: stretch;
+        flex-wrap: wrap; /* Allows wrapping of cards on smaller screens */
+      }
+    }
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+  
+    &:hover {
+      transform: translateY(-5px); /* Lift card on hover */
+    }
+  
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+  
+    h3 {
+      margin: 10px 0;
+      font-size: 1.5em;
+      color: #003057;
+    }
+  
+    p {
+      font-size: 1em;
+      color: #555;
+      margin-bottom: 10px;
+    }
+  }
+  

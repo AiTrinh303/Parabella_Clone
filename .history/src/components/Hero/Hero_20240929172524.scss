@@ -1,0 +1,90 @@
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(0, 45, 87);
+    position: relative; 
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .hero-content {
+        color: white; 
+        position: absolute; 
+        top: 100px;
+        z-index: 1; 
+        padding: 20px; 
+        max-width: 40%; 
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center;
+
+        h1 {
+            margin: 0; 
+            font-size: 3.2em; 
+            text-align: center;
+            margin-bottom: 35px;
+            line-height: 1.5;
+        }
+
+        p {
+            display: block; 
+            margin: 10px 0; 
+            justify-content: center;           
+            font-size: 1.5em; 
+            font-weight: 300;
+            text-align: center;
+            margin-bottom: 35px;
+            line-height: 1.4;
+        }
+
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            .cta {
+                background-color: #fff; // Example color
+                color:rgb(0,45,87); 
+                border: none; 
+                padding: 15px 25px; 
+                margin-right: 10px; 
+                font-size: large;
+                border-radius: 8px;
+                font-weight: 700;
+                cursor: pointer; 
+                transition: background-color 0.3s ease;
+    
+                &:hover {
+                    background-color: rgb(127, 146, 162)
+                }
+
+            .play{
+                
+            }    
+
+            }
+        }
+    }
+
+    .group-image {
+        position: absolute; 
+        bottom: 0; // Position at the bottom
+        right: 180px; // Position at the right
+        width: auto; // Maintain aspect ratio
+        height: auto; // Maintain aspect ratio
+        max-width: 65%; // You can adjust this as needed
+        max-height: 65%; // You can adjust this as needed
+    }
+
+    .screen-image {
+        position: absolute; 
+        bottom: 0; // Position at the bottom
+        left: 5; // Position at the left
+        width: auto; // Maintain aspect ratio
+        height: auto; // Maintain aspect ratio
+        max-width: 60%; // You can adjust this as needed
+        max-height: 60%; // You can adjust this as needed
+    }
+}

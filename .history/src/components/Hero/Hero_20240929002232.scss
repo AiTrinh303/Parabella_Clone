@@ -1,0 +1,53 @@
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(0, 45, 87);
+    position: relative; 
+    overflow: hidden; 
+
+    .hero-content {
+        color: white; 
+        position: relative; 
+        z-index: 1; 
+        padding: 20px; 
+        max-width: 50%; // Limit content width for better alignment
+        display: flex;
+        flex-direction: column; // Stack the heading, span, and button vertically
+        justify-content: center; // Vertically center the content
+        
+
+        h1 {
+            margin: 0; // Reset default margin
+            font-size: 2.5em; // Adjust size as needed
+        }
+
+        span {
+            display: block; // Ensure it takes full width
+            margin: 10px 0; // Spacing between heading and span
+        }
+
+        .cta {
+            background-color: rgb(255, 205, 0); // Example color
+            color: black; 
+            border: none; 
+            padding: 10px 20px; 
+            margin-right: 10px; 
+            cursor: pointer; 
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: rgb(255, 175, 0); // Darker shade on hover
+            }
+        }
+    }
+
+    .group-image {
+        position: absolute; 
+        bottom: 0; // Position at the bottom
+        right: 0; // Position at the right
+        width: auto; // Maintain aspect ratio
+        height: auto; // Maintain aspect ratio
+        max-width: 60%; // You can adjust this as needed
+        max-height: 60%; // You can adjust this as needed
+    }
+}

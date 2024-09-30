@@ -1,0 +1,39 @@
+.layout {
+  display: flex;
+  flex-direction: column; /* Stack the navbar, content, and footer vertically */
+  min-height: 100vh; /* Ensure the layout takes the full viewport height */
+
+  .navbar {
+    width: 100%;
+    background-color: gray;
+    height: 60px;
+    position: fixed; /* Fix the navbar to the top */
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .content {
+    flex: 1; /* Make the content area grow to fill available space */
+    margin-top: 60px; /* Account for the fixed navbar height */
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 120px); /* Full height minus navbar and footer */
+    padding-bottom: 60px; /* Ensure content doesn't overlap the footer */
+
+    .outlet {
+      flex: 1; /* Outlet takes the remaining space */
+      padding: 20px;
+      background-color: #fff;
+      overflow-y: auto; /* Enable scrolling for the content area if necessary */
+    }
+  }
+
+  .footer {
+    width: 100%;
+    background-color: gray;
+    height: 60px;
+    margin-top: auto; /* Push the footer to the bottom */
+  }
+}
+

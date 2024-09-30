@@ -1,0 +1,129 @@
+.kontakt{
+    width: 100%;
+    min-height: 70vh; 
+    background-color: #fff; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 50px 200px;
+
+  
+  .kontakt-info {
+    flex: 1;    
+    
+    span {
+      display: flex;
+      align-items: center;
+      font-size: 1.2em;
+      font-weight: 400;
+      margin-bottom: 20px;
+      color: rgb(126,159,20);
+      
+      img {
+        margin-left: 10px;
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    h2{
+        font-size: 3em;
+        color: rgb(25,27,6); 
+        max-width: 50vw;
+        margin: 0 auto;
+        padding-bottom: 50px;
+      }
+
+    ul {
+      list-style: none;   
+
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        
+        img {
+          margin-right: 20px;
+          width: 30px;                    
+        }
+
+        span {
+          font-weight: semibold;
+          color: rgb(0, 45, 87);
+          align-items: center;
+        }
+
+        .phone{
+            text-decoration: underline;
+        }
+        .title{
+            font-weight: bold;
+            color: #000;
+        }
+      }
+    }
+  }
+
+  .kontakt-form {
+    flex: 1;
+    background-color: #f9f9f9; /* Light background for contrast */
+    border: 1px solid #ddd; /* Light border for definition */
+    border-radius: 8px; /* Rounded corners */
+    padding: 40px; /* Spacing inside the form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 500px; /* Limit max width for better layout */
+    margin: 0 auto; /* Center the form */
+  
+    form {
+      display: flex;
+      flex-direction: column; /* Arrange items in a column */
+      
+      div {
+        margin-bottom: 20px; /* Space between input groups */
+        
+        label {
+          display: block; /* Make labels block elements */
+          font-weight: bold; /* Bold labels */
+          margin-bottom: 5px; /* Space between label and input */
+          color: rgb(25, 27, 6); /* Consistent text color */
+        }
+  
+        input, textarea {
+          width: 100%; /* Full width */
+          padding: 10px; /* Spacing inside inputs */
+          border: 1px solid #ccc; /* Border for inputs */
+          border-radius: 4px; /* Slightly rounded corners */
+          font-size: 1em; /* Font size for inputs */
+          transition: border-color 0.3s; /* Smooth transition on focus */
+          
+          &:focus {
+            border-color: rgb(126, 159, 20); /* Highlight border color on focus */
+            outline: none; /* Remove default outline */
+          }
+        }
+      }
+  
+      textarea {
+        resize: vertical; /* Allow vertical resizing */
+        min-height: 100px; /* Minimum height for textarea */
+      }
+  
+      button {
+        padding: 10px 20px; /* Spacing inside the button */
+        background-color: rgb(126, 159, 20); /* Button background color */
+        color: #fff; /* White text color */
+        border: none; /* No border */
+        border-radius: 4px; /* Rounded corners */
+        font-size: 1.1em; /* Button font size */
+        cursor: pointer; /* Pointer cursor on hover */
+        transition: background-color 0.3s; /* Smooth transition on hover */
+        
+        &:hover {
+          background-color: rgb(102, 129, 16); /* Darker shade on hover */
+        }
+      }
+    }
+  }
+  
+}

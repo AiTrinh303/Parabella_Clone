@@ -1,0 +1,150 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  background-color: rgb(0, 45, 87);
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  &-left {
+    flex: 1;
+    max-height: 20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  &-center {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 20px;
+    text-decoration: none;
+    list-style: none;
+
+    .active {
+      text-decoration: underline;
+    }
+  }
+
+  &-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    position: relative;
+    
+    .menuIcon {
+      display: none;
+      z-index: 999;
+      cursor: pointer;
+
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+
+    button {
+      background: transparent;
+      border: none;
+      color: #fff;
+      padding: 0.6rem 1rem;
+      border-radius: 8px;
+      font-size: 20px;
+      cursor: pointer;
+
+      &.app {
+        background-color: white;
+        color: rgb(0, 45, 87);
+
+        &:hover {
+          background-color: rgb(127, 146, 162);
+        }
+      }
+    }
+  }
+  .menu {
+    position: absolute;
+      top: 0;
+      right: -55%;
+      background-color: black;
+      color: white;
+      height: 100vh;
+      width: 50%;
+      transition: all 1s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+
+      &.active {
+        right: 0;
+      }
+
+  }
+
+  /* Responsive for smaller screens */
+  @media (max-width: 768px) {
+
+    &-left {
+      flex: 1;
+      font-size: 20px;
+    }
+
+    &-center {
+      display: none;
+    }
+
+    &-right {
+      button{
+        display: none;
+      }
+
+      .menuIcon {
+        position: relative;
+        right: 10px;
+
+        display: block;
+      }
+
+      .menu {
+        position: absolute;
+        right: 50px;
+        background-color: rgb(0, 45, 87);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;        
+
+        a, button {
+          margin: 1rem 0;
+          font-size: 18px;
+        }
+
+        .app{
+          border: 1px solid white;
+        }
+
+        &.active {
+          display: flex;
+        }
+      }
+    }
+  }
+
+
+
+}
+

@@ -1,0 +1,111 @@
+.service{
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
+    padding-top: 100px;
+
+    span{
+        font-size: 1.2em;
+        font-weight: 400;
+        margin-bottom: 20px;
+        color: rgb(126,159,20);
+      }  
+    
+    h2{
+        font-size: 2.7em;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        color: rgb(0, 45, 87); 
+        max-width: 50vw;
+        margin: 0 auto;
+      }
+
+    p{
+        font-size: 1.2em;
+        font-weight: 400;
+        margin: 30px auto;
+        max-width: 30%;
+    }  
+    .blocks {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* Display 4 blocks per row */
+        gap: 20px;
+      }
+    
+      @media (max-width: 1200px) {
+        .blocks {
+          grid-template-columns: repeat(3, 1fr); /* Display 3 blocks per row on medium screens */
+        }
+      }
+    
+      @media (max-width: 900px) {
+        .blocks {
+          grid-template-columns: repeat(2, 1fr); /* Display 2 blocks per row on small screens */
+        }
+      }
+    
+      @media (max-width: 600px) {
+        .blocks {
+          grid-template-columns: 1fr; /* Display 1 block per row on extra small screens */
+        }
+      }
+    }
+    .block {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+      
+        h3 {
+          font-size: 1.5rem;
+          color: #222;
+          margin-bottom: 10px;
+        }
+      
+        p {
+          font-size: 1rem;
+          color: #666;
+          margin-bottom: 15px;
+        }
+      
+        ul {
+          list-style: none;
+          padding: 0;
+          margin-bottom: 15px;
+      
+          li {
+            font-size: 1rem;
+            color: #444;
+            margin-bottom: 5px;
+            position: relative;
+            padding-left: 20px;
+      
+            &:before {
+              content: '✔'; /* Checkmark for each feature */
+              position: absolute;
+              left: 0;
+              color: #00c853;
+            }
+          }
+        }
+      
+        button {
+          background-color: #00c853;
+          color: #fff;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 1rem;
+      
+          &:hover {
+            background-color: #009e44;
+          }
+        }
+      
+        &:hover {
+          transform: scale(1.05);
+        }
+      }

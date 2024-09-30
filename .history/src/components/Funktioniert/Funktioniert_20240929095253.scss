@@ -1,0 +1,85 @@
+.funktioniert {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row; // Aligns content and image side by side
+    justify-content: space-between; // Space between content and image
+    align-items: center; // Center vertically
+    padding: 150px 0; // Space around the section
+
+    .content {
+        max-width: 50%; // Limit content width
+        padding-right: 20px; // Space between text and image
+        color: rgb(0, 45, 87); // Text color
+
+        p {
+            font-size: 1.2em; // Adjust size for emphasis
+            font-weight: 600; // Make it bold
+            margin-bottom: 20px; // Space below the paragraph
+            color: rgb(126,159,20);
+        }
+
+        h2 {
+            font-size: 3em; // Size of the main heading
+            margin-bottom: 50px; // Space below the heading
+            color: black; // Heading color
+        }
+
+        .step-container {
+            display: flex; // Flex for steps
+            flex-direction: column; // Align steps vertically
+            gap: 40px; // Space between steps
+
+            .step{
+                .step-number {
+                    font-size: 2em; // Large number for emphasis
+                    font-weight: bold; // Bold for visibility
+                    color: rgb(127, 146, 162); // Step number color
+                }
+            }
+            
+            
+            
+            
+            
+
+            .step-content {
+                h3 {
+                    font-size: 1.8em; // Size of subheadings
+                    margin: 10px 0; // Space around subheadings
+                }
+
+                p {
+                    font-size: 1em; // Regular size for descriptions
+                    line-height: 1.6; // Improve readability
+                    margin-bottom: 20px; // Space below descriptions
+                    color:rgb(146,146,174);
+                }
+            }
+        }
+
+        button {
+            background-color: rgb(0, 45, 87); // Button background
+            color: white; // Text color
+            border: none; // Remove border
+            padding: 15px 25px; // Padding for the button
+            border-radius: 8px; // Rounded corners
+            font-size: 1.2em; // Font size of button
+            cursor: pointer; // Pointer on hover
+            transition: background-color 0.3s ease; // Transition for hover effect
+
+            &:hover {
+                background-color: rgb(127, 146, 162); // Change color on hover
+            }
+        }
+    }
+
+    .image {
+        max-width: 50%; // Limit image width
+        img {
+            width: 100%; // Make image responsive
+            height: auto; // Maintain aspect ratio
+        }
+    }
+    
+}
