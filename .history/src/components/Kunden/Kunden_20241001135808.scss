@@ -1,0 +1,119 @@
+@import '../../responsive.scss';
+
+.kunden {
+    width: 100vw;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 100px;
+    background-color: #fff;
+   
+
+  .back-btn, .next-btn {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background-color: rgb(0, 45, 87);
+    padding: 5px;
+  }
+
+  .back-btn {
+    left: 20px;
+  }
+
+  .next-btn {
+    right: 20px;
+  }
+
+  .kunden-content {
+    width: 100%;
+    margin: 0 80px;
+
+    h2 {
+      font-size: 3em;
+      margin-bottom: 50px;
+      color:rgb(25,27,6);
+    }
+
+    .content {
+      display: flex;
+      gap: 50px;
+      justify-content: space-between;
+      align-items: stretch;
+      flex-wrap: wrap;
+      @include sm {
+        flex-direction: column;
+        gap: 20px;
+      }
+      
+    }
+  }
+
+  .card {
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    padding: 40px;
+    max-width: 500px;
+    min-height: 450px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    transition: transform 0.1s ease;
+    cursor: pointer;
+
+    @include sm {
+      padding: 0px;
+      flex-direction: row;
+  
+    &:hover {
+      transform: translateY(-5px);
+    }
+  
+    .info {
+      display: flex;
+      justify-content: flex-start; 
+      gap: 30px;               
+      margin: 30px;  
+
+      img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+      }
+  
+      .details {
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-start; 
+        justify-content: center;
+        text-align: start;       
+  
+        h3 {
+          margin: 0;
+          font-size: 1.5em;
+          color: #003057;
+        }
+  
+        span {
+          font-size: 1em;
+          color: #555;
+          margin-top: 5px;
+        }
+      }
+    }
+  
+    p {
+      font-size: 1.3em;
+      color: rgb(0, 45, 87);
+      font-weight: 700;
+    }
+  }
+}  
