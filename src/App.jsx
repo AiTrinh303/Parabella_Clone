@@ -1,5 +1,3 @@
-
-
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Layout } from './layouts/Layout';
 import HomePage from './pages/HomePage/HomePage';
