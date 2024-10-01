@@ -20,7 +20,7 @@ const Hero = ({setPlayVideo}) => {
 
       </div>
       <img src={groupImage} alt="Group" className="group-image" />
-      <img data-aos="fade-up" src={screenImage} alt="ParabellaScreen" className="screen-image"/>
+      <img src={screenImage} alt="ParabellaScreen" className="screen-image"/>
     </div>
   );
 }
