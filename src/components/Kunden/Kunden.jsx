@@ -43,7 +43,7 @@ const Kunden = () => {
       <img src={backBtn} alt="back-icon" className='back-btn' onClick={handleBack} />
 
       <div className='kunden-content'>
-        <h2>Was unsere Kunden sagen</h2> 
+        <h2  data-aos="fade-right">Was unsere Kunden sagen</h2> 
         <div className="content">
           {visibleKunden.map((kunde) => (
             <Card key={kunde.id} {...kunde} />

@@ -9,8 +9,8 @@ const Hero = ({setPlayVideo}) => {
         <h1>CSRD Berichte einfach und kostengünstig erstellen</h1>
         <p>Parabella Analytics – die Software zur Messung, Visualisierung und Erstellung von ESG-Berichten entlang der CSRD Kriterien</p>
         <div>
-          <button >Kostenlos testen</button>
-          <div>
+          <button data-aos="fade-right">Kostenlos testen</button>
+          <div data-aos="fade-left">
             <img src={playIcon} alt="play icon" onClick={()=> {setPlayVideo(true)}}/>
             <span>
               Erklärvideo abspielen
@@ -20,7 +20,7 @@ const Hero = ({setPlayVideo}) => {
 
       </div>
       <img src={groupImage} alt="Group" className="group-image" />
-      <img src={screenImage} alt="ParabellaScreen" className="screen-image"/>
+      <img data-aos="fade-up" data-aos-duration="1000" src={screenImage} alt="ParabellaScreen" className="screen-image"/>
     </div>
   );
 }

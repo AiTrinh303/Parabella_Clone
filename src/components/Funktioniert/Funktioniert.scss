@@ -56,6 +56,22 @@
                     }
                 }
                 .step-content {
+                    border-radius: 20px;
+                    list-style: none;
+                    padding-left: 25px;
+                    background-image: linear-gradient(
+                        90deg,
+                        rgb(126,159,20) 0%,
+                        rgba(255, 255, 255, 0) 100%
+                    );
+                    background-size: 0 100%;
+                    background-repeat: no-repeat;
+                    transition: 0.4s;
+
+                    &:hover {
+                        background-size: 100% 100%;
+                        color: #fff;
+                    }
                     h3 {
                         font-size: 1.8em; // Size of subheadings
                         margin: 10px 0; // Space around subheadings
@@ -64,7 +80,7 @@
                         font-size: 1em; // Regular size for descriptions
                         line-height: 1.6; // Improve readability
                         margin-bottom: 20px; // Space below descriptions
-                        color:rgb(146,146,174);
+                        color:rgb(88, 88, 95);
                         font-weight: 400;
                     }
                 }

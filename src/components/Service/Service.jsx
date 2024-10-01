@@ -20,7 +20,7 @@ const Service = () => {
   return (
     <div className="service">
       <span>Service</span>
-      <h2>Unsere Software-Landschaft</h2>
+      <h2  data-aos="zoom-in">Unsere Software-Landschaft</h2>
       <p>Je nach Unternehmensgröße und Situation empfiehlt es sich das passende Paket zu wählen.</p>
       <div className="blocks">
         {service.map((item) => (

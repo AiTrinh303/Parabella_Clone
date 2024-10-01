@@ -9,7 +9,7 @@ const Navbar = () => {
 
   const toggleMenu = () => setOpen(prev => !prev);
   return (
-    <nav className="navbar">
+    <nav data-aos="zoom-in-down" className="navbar">
 
       <div className="navbar-left">
         <a href="/" className="navbar-logo">

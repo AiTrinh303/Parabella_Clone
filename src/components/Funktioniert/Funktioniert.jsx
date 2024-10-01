@@ -34,7 +34,7 @@ const Funktioniert = () => {
         <button>Kostenlos testen</button>
       </div>
 
-      <div className="image">
+      <div data-aos="fade-left" data-aos-duration="1000" className="image">
         <img src={MockupImage} alt="Mockup-MacBook" />
       </div>
     </div>

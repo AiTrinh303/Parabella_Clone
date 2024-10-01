@@ -32,7 +32,7 @@ const Kontakt = () => {
         </ul>
       </div>
 
-      <div className="kontakt-form">
+      <div data-aos="fade-left" className="kontakt-form">
             <form>
                 <div className='name'>
                     <p>Name (erforderlich) </p>

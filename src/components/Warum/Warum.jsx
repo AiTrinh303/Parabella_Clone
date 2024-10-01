@@ -16,7 +16,7 @@ const Warum = () => {
   return (
     <div className='warum'>
       <p>Warum Parabella Analytics?</p>
-      <h2>Was Sie erwartet, wenn Sie keinen Nachhaltigkeitsbericht abgeben:</h2>
+      <h2  data-aos="zoom-in">Was Sie erwartet, wenn Sie keinen Nachhaltigkeitsbericht abgeben:</h2>
       <div className="block">
         {warum.map((item) => (
           <Card key={item.id} {...item} />
